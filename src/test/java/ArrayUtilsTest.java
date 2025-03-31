@@ -51,4 +51,14 @@ public class ArrayUtilsTest {
         assertEquals(0, ArrayUtils.oddOrPos(new int[]{}));
     }
 
+
+    @Test
+    public void testCountOfEmpty() {
+        assertEquals(0, ArrayUtils.countOf(new int[]{}, 0));
+    }
+
+    @Test
+    public void testCountOfNormal() {
+        assertEquals(1, ArrayUtils.countOf(new int[]{1, 2, 3}, 2));
+    }
 }
